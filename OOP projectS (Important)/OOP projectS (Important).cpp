@@ -4,7 +4,10 @@
 #include"clsPerson.h"
 #include"clsString.h"
 #include "clsInputValidate.h"
-#include"clsMainScreen.h"
+//#include"clsMainScreen.h"
+#include"clsDateAndLogeed.h"
+#include "clsLoginScreen.h"
+
 
 
 
@@ -227,6 +230,36 @@ int main()
 {
     //clsMainScreen::ShowMainMenue();
 
+    bool login = false;
+
+    do
+    {
+
+        
+        
+            login = clsLoginScreen::ShowLoginScreen();
+        
+         
+            
+       
+         
+
+    } while (login);
+     
+
+    //while (clsLoginScreen::ShowLoginScreen() == true)
+    //{
+    //    clsLoginScreen::ShowLoginScreen();
+    //}
+    
+   
+
+
+        system("pause>0");
+    
+
+
+   
     //clsDate::PrintYearCalendar(2024);
 
    // UpdateClient();
@@ -263,6 +296,7 @@ int main()
     cout << "\nIs Client Exist? " << clsBankClient::IsClientExist("A101");*/
 
    
-    system("pause>0");
-    return 0;
+  
+
+        return 0;
 }
